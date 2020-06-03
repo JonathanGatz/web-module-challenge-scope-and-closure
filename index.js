@@ -85,7 +85,6 @@ function processFirstItem(stringList, callback) {
 
 let home = "The Home score is";
 let away = "The Away score is";
-let bothScores = `the ${away} team score is ${inning} and the ${home} team score is ${inning}`;
 
 function finalScore(inning, home, away){
   /*Code Here*/
@@ -93,7 +92,7 @@ function finalScore(inning, home, away){
     inning[i]
   }
 }
-console.log(home, inning(10,0)); 
+console.log(home, inning(10, 0)); 
 console.log(away, inning(10, 0));
 
 
@@ -118,13 +117,28 @@ and returns the score at each pont in the game, like so:
 
 Final Score: 6 - 10 */
 
-function scoreboard(/* CODE HERE */) {
+let one = "1st inning";
+let two = "2nd inning";
+let three = "3rd inning";
+let four = "4th inning";
+let five = "5th inning";
+let six = "6th inning";
+let seven = "7th inning";
+let eight = "8th inning";
+let nine = "9th inning";
+
+function scoreboard(inning) {
   /* CODE HERE */
+
 }
 
-
-let appliences = ['Brevelle', 'Jura', 'Aark', 'Whorlepool'];
-
-for (let i=0; i<=appliences.length-1; ++i); 
-console.log(appliences[i])
+console.log(one, inning(10, 0), inning(10, 0)); 
+console.log(two, inning(10, 0), inning(10, 0)); 
+console.log(three, inning(10, 0), inning(10, 0)); 
+console.log(four, inning(10, 0), inning(10, 0)); 
+console.log(five, inning(10, 0), inning(10, 0)); 
+console.log(six, inning(10, 0), inning(10, 0)); 
+console.log(seven, inning(10, 0), inning(10, 0)); 
+console.log(eight, inning(10, 0), inning(10, 0)); 
+console.log(nine, inning(10, 0), inning(10, 0)); 
 
