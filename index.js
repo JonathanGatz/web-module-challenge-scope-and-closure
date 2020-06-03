@@ -77,17 +77,25 @@ finalScore(inning, 9) might return:
   "Home": 11,
   "Away": 5,
 }
+function processFirstItem(stringList, callback) {
+  return callback(stringList[0])
+}
 
 */ 
+
+let home = "The Home score is";
+let away = "The Away score is";
+let bothScores = `the ${away} team score is ${inning} and the ${home} team score is ${inning}`;
 
 function finalScore(inning, home, away){
   /*Code Here*/
   for (let i in finalScore) {
-    inning(home[i], away[i])
+    inning[i]
   }
 }
-finalScore([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]),
-function (inning) {console.log(inning)}
+console.log(home, inning(10,0)); 
+console.log(away, inning(10, 0));
+
 
 /* Task 4: 
 
