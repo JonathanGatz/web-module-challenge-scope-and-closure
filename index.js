@@ -28,7 +28,12 @@ function processFirstItem(stringList, callback) {
  * 
  * 1. What is the difference between counter1 and counter2?
  * 
+ * ## Counter1 is outside of the scope (which can be referenced within the scope)
+ * ## counter2 is inside the scope (which can't be referenced outside the scope)
+ * 
  * 2. Which of the two uses a closure? How can you tell?
+ * 
+ * ## counter1 uses clouser becuae it is nesting a function within a function and calling variables from outside the scope. 
  * 
  * 3. In what scenario would the counter1 code be preferable? In what scenario would counter2 be better? 
  *
@@ -55,12 +60,11 @@ function counter2() {
 /* Task 2: inning() 
 
 Write a function called `inning` that generates a random number of points that a team scored in an inning. This should be a whole number between 0 and 2. */
-
-function inning(/*Code Here*/){
-
-    /*Code Here*/
-
+function inning(max) { 
+return Math.floor(Math.random() * Math.floor(max));
+// I used this "max" value to represent the height possible value 
 }
+console.log(inning(3));
 
 /* Task 3: finalScore()
 
@@ -76,11 +80,14 @@ finalScore(inning, 9) might return:
 
 */ 
 
-function finalScore(/*code Here*/){
-
+function finalScore(inning, home, away){
   /*Code Here*/
-
+  for (let i in finalScore) {
+    inning(home[i], away[i])
+  }
 }
+finalScore([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]),
+function (inning) {console.log(inning)}
 
 /* Task 4: 
 
@@ -107,4 +114,9 @@ function scoreboard(/* CODE HERE */) {
   /* CODE HERE */
 }
 
+
+let appliences = ['Brevelle', 'Jura', 'Aark', 'Whorlepool'];
+
+for (let i=0; i<=appliences.length-1; ++i); 
+console.log(appliences[i])
 
