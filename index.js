@@ -118,78 +118,85 @@ and returns the score at each pont in the game, like so:
 Final Score: 6 - 10 */
 
 
-let one = "1st inning";
-let two = "2nd inning"
-let three = "3rd inning"
-let four = "4th inning"
-let five = "5th inning"
-let six = "6th inning"
-let seven = "7th inning"
-let eight = "8th inning"
-let nine = "9th inning"
-let final = "The final score is"
+// let one = "1st inning";
+// let two = "2nd inning"
+// let three = "3rd inning"
+// let four = "4th inning"
+// let five = "5th inning"
+// let six = "6th inning"
+// let seven = "7th inning"
+// let eight = "8th inning"
+// let nine = "9th inning"
+// let final = "The final score is"
 
-function scoreboard (inning, one, two, three, four, five, six , seven, eight, nine, final) {
-  return one, two, three, four, five, six, seven, eight, nine, final + inning;
-}
+// function scoreboard (inning, one, two, three, four, five, six , seven, eight, nine, final) {
+//   return one, two, three, four, five, six, seven, eight, nine, final + inning;
+// }
 
-console.log(one, inning(10, 0), inning(10, 0)); 
-console.log(two, inning(10, 0), inning(10, 0)); 
-console.log(three, inning(10, 0), inning(10, 0)); 
-console.log(four, inning(10, 0), inning(10, 0)); 
-console.log(five, inning(10, 0), inning(10, 0)); 
-console.log(six, inning(10, 0), inning(10, 0)); 
-console.log(seven, inning(10, 0), inning(10, 0)); 
-console.log(eight, inning(10, 0), inning(10, 0)); 
-console.log(nine, inning(10, 0), inning(10, 0));
-console.log(final, inning(10, 0), inning(10, 0));
-
-
+// console.log(one, inning(10, 0), inning(10, 0)); 
+// console.log(two, inning(10, 0), inning(10, 0)); 
+// console.log(three, inning(10, 0), inning(10, 0)); 
+// console.log(four, inning(10, 0), inning(10, 0)); 
+// console.log(five, inning(10, 0), inning(10, 0)); 
+// console.log(six, inning(10, 0), inning(10, 0)); 
+// console.log(seven, inning(10, 0), inning(10, 0)); 
+// console.log(eight, inning(10, 0), inning(10, 0)); 
+// console.log(nine, inning(10, 0), inning(10, 0));
+// console.log(final, inning(10, 0), inning(10, 0));
 
 
 
-function scoreboard(inning, numInning) {
+
+let numInnings = [];
+function scoreboard(inning, numInnings) {
   let inningScoreHome = 0
   let inningScoreAway = 0
 
-  inningScoreHome = inningScoreHome + inning();
-  inningScoreAway = inningScoreAway + inning();
-  for (let i = 1; i <= 9; i++) {
+  for (let i=1; i<=numInnings; i++) {
+    inningScoreHome = inningScoreHome + inning(i);
+    inningScoreAway = inningScoreAway + inning(i);
     if (i === 1) {
-      console.log(`${i}st inning: ${inningScoreHome()} - ${inningScoreAway()}`)
+      console.log("1st inning" , inning(20, 0), inning(10, 0));
+      //console.log(`${i}st inning: ${inningScoreHome} - ${inningScoreAway}`)
+    } else if (i === 2) {
+      console.log("2nd inning" , inning(20, 0), inning(10, 0));
+      //console.log(`${i}nd inning: ${inningScoreHome} - ${inningScoreAway}`)
+    } else if (i === 3) {
+      console.log(`${i}rd inning: ${inningScoreHome} - ${inningScoreAway}`)
+    } else console.log(`${i}th inning: ${inningScoreHome} - ${inningScoreAway}`)
     }
-    if (i === 2) {
-      console.log(`${i}st inning: ${inningScoreHome()} - ${inningScoreAway()}`)
-    }
-    if (i === 3) {
-      console.log(`${i}st inning: ${inningScoreHome()} - ${inningScoreAway()}`)
-    }
-    if (i === 1) {
-      console.log(`${i}st inning: ${inningScoreHome()} - ${inningScoreAway()}`)
-    }
-    if (i === 1) {
-      console.log(`${i}st inning: ${inningScoreHome()} - ${inningScoreAway()}`)
-    }
-    if (i === 1) {
-      console.log(`${i}st inning: ${inningScoreHome()} - ${inningScoreAway()}`)
-    }
-    if (i === 1) {
-      console.log(`${i}st inning: ${inningScoreHome()} - ${inningScoreAway()}`)
-    }
-    if (i === 1) {
-      console.log(`${i}st inning: ${inningScoreHome()} - ${inningScoreAway()}`)
-    }
-    if (i === 1) {
-      console.log(`${i}st inning: ${inningScoreHome()} - ${inningScoreAway()}`)
-    }
-    console.log(`Final Score: ${inningScoreHome} - ${inningScoreAway}`)
-  }
+    console.log("Final Score" , inning(20, 0), inning(10, 0));
 }
+
 console.log(scoreboard(inning, 9));
 
 
 
 
 
-
-
+// if (i === 2) {
+//   console.log(`${i}st inning: ${inningScoreHome()} - ${inningScoreAway()}`)
+// }
+// if (i === 3) {
+//   console.log(`${i}st inning: ${inningScoreHome()} - ${inningScoreAway()}`)
+// }
+// if (i === 4) {
+//   console.log(`${i}st inning: ${inningScoreHome()} - ${inningScoreAway()}`)
+// }
+// if (i === 5) {
+//   console.log(`${i}st inning: ${inningScoreHome()} - ${inningScoreAway()}`)
+// }
+// if (i === 6) {
+//   console.log(`${i}st inning: ${inningScoreHome()} - ${inningScoreAway()}`)
+// }
+// if (i === 7) {
+//   console.log(`${i}st inning: ${inningScoreHome()} - ${inningScoreAway()}`)
+// }
+// if (i === 8) {
+//   console.log(`${i}st inning: ${inningScoreHome()} - ${inningScoreAway()}`)
+// }
+// if (i === 9) {
+//   console.log(`${i}st inning: ${inningScoreHome()} - ${inningScoreAway()}`)
+// }
+// console.log(`Final Score: ${inningScoreHome} - ${inningScoreAway}`)
+// }
