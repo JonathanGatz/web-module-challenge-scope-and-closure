@@ -28,12 +28,12 @@ function processFirstItem(stringList, callback) {
  * 
  * 1. What is the difference between counter1 and counter2?
  * 
- * ## Counter1 is outside of the scope (which can be referenced within the scope)
- * ## counter2 is inside the scope (which can't be referenced outside the scope)
+ * ********* Counter1 is outside of the scope (which can be referenced within the scope) *********
+ * ********* counter2 is inside the scope (which can't be referenced outside the scope) *********
  * 
  * 2. Which of the two uses a closure? How can you tell?
  * 
- * ## counter1 uses clouser becuae it is nesting a function within a function and calling variables from outside the scope. 
+ * ********* counter1 uses clouser becuae it is nesting a function within a function and calling variables from outside the scope. *********
  * 
  * 3. In what scenario would the counter1 code be preferable? In what scenario would counter2 be better? 
  *
@@ -60,9 +60,10 @@ function counter2() {
 /* Task 2: inning() 
 
 Write a function called `inning` that generates a random number of points that a team scored in an inning. This should be a whole number between 0 and 2. */
+
 function inning(max) { 
 return Math.floor(Math.random() * Math.floor(max));
-// I used this "max" value to represent the height possible value 
+//********* I used this "max" value to represent the height possible value *********||
 }
 console.log(inning(3));
 
@@ -157,6 +158,7 @@ function scoreboard(inning, numInnings) {
     inningScoreAway = inningScoreAway + inning(i);
     if (i === 1) {
       console.log("1st inning" , inning(20, 0), inning(10, 0));
+      //*********I decided to mix up the different paramators. I wanted to test different ways/ideas on how to print numbers.*********||
       //console.log(`${i}st inning: ${inningScoreHome} - ${inningScoreAway}`)
     } else if (i === 2) {
       console.log("2nd inning" , inning(20, 0), inning(10, 0));
@@ -164,8 +166,9 @@ function scoreboard(inning, numInnings) {
     } else if (i === 3) {
       console.log(`${i}rd inning: ${inningScoreHome} - ${inningScoreAway}`)
     } else console.log(`${i}th inning: ${inningScoreHome} - ${inningScoreAway}`)
+    //*********I am passing through code that was created within this specific function. *********||
     }
-    console.log("Final Score" , inning(20, 0), inning(10, 0));
+    console.log("Final Score" , inning(20, 0,), inning(10, 0));
 }
 
 console.log(scoreboard(inning, 9));
