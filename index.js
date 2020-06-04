@@ -144,3 +144,52 @@ console.log(eight, inning(10, 0), inning(10, 0));
 console.log(nine, inning(10, 0), inning(10, 0));
 console.log(final, inning(10, 0), inning(10, 0));
 
+
+
+
+
+function scoreboard(inning, numInning) {
+  let inningScoreHome = 0
+  let inningScoreAway = 0
+
+  inningScoreHome = inningScoreHome + inning();
+  inningScoreAway = inningScoreAway + inning();
+  for (let i = 1; i <= 9; i++) {
+    if (i === 1) {
+      console.log(`${i}st inning: ${inningScoreHome()} - ${inningScoreAway()}`)
+    }
+    if (i === 2) {
+      console.log(`${i}st inning: ${inningScoreHome()} - ${inningScoreAway()}`)
+    }
+    if (i === 3) {
+      console.log(`${i}st inning: ${inningScoreHome()} - ${inningScoreAway()}`)
+    }
+    if (i === 1) {
+      console.log(`${i}st inning: ${inningScoreHome()} - ${inningScoreAway()}`)
+    }
+    if (i === 1) {
+      console.log(`${i}st inning: ${inningScoreHome()} - ${inningScoreAway()}`)
+    }
+    if (i === 1) {
+      console.log(`${i}st inning: ${inningScoreHome()} - ${inningScoreAway()}`)
+    }
+    if (i === 1) {
+      console.log(`${i}st inning: ${inningScoreHome()} - ${inningScoreAway()}`)
+    }
+    if (i === 1) {
+      console.log(`${i}st inning: ${inningScoreHome()} - ${inningScoreAway()}`)
+    }
+    if (i === 1) {
+      console.log(`${i}st inning: ${inningScoreHome()} - ${inningScoreAway()}`)
+    }
+    console.log(`Final Score: ${inningScoreHome} - ${inningScoreAway}`)
+  }
+}
+console.log(scoreboard(inning, 9));
+
+
+
+
+
+
+
