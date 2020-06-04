@@ -117,19 +117,20 @@ and returns the score at each pont in the game, like so:
 
 Final Score: 6 - 10 */
 
+
 let one = "1st inning";
-let two = "2nd inning";
-let three = "3rd inning";
-let four = "4th inning";
-let five = "5th inning";
-let six = "6th inning";
-let seven = "7th inning";
-let eight = "8th inning";
-let nine = "9th inning";
+let two = "2nd inning"
+let three = "3rd inning"
+let four = "4th inning"
+let five = "5th inning"
+let six = "6th inning"
+let seven = "7th inning"
+let eight = "8th inning"
+let nine = "9th inning"
+let final = "The final score is"
 
-function scoreboard(inning) {
-  /* CODE HERE */
-
+function scoreboard (inning, one, two, three, four, five, six , seven, eight, nine, final) {
+  return one, two, three, four, five, six, seven, eight, nine, final + inning;
 }
 
 console.log(one, inning(10, 0), inning(10, 0)); 
@@ -140,5 +141,6 @@ console.log(five, inning(10, 0), inning(10, 0));
 console.log(six, inning(10, 0), inning(10, 0)); 
 console.log(seven, inning(10, 0), inning(10, 0)); 
 console.log(eight, inning(10, 0), inning(10, 0)); 
-console.log(nine, inning(10, 0), inning(10, 0)); 
+console.log(nine, inning(10, 0), inning(10, 0));
+console.log(final, inning(10, 0), inning(10, 0));
 
