@@ -64,13 +64,15 @@ dansRoll();
 
 a. Where is closure used in this code? How can you tell?
 
-//*******return function (), It's a function inside a function********||
+//*******return function (), Inner function is returned from the outer function********||
 
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
 //*******The outcome will always be the same, Though, the order will start to cascade on its way down the list. The function remembers how many times it's been console.log'd & will display that info********||
 
 
 c. What is the lexical scope of `newRoll`? 
+
+//*******Lexical scope will be reffering to something outside the function... So, I guess the only option would be "name"?? I think? ********||
 
 ### Task 3 - Stretch Goals
 
